@@ -62,6 +62,6 @@ Step 10: Display line between people who are near and risk possessed to them by 
 ![Web capture_2-3-2023_17499_](https://user-images.githubusercontent.com/68748665/222426942-0a8ca237-77ea-4483-8b7a-2475913f110d.jpeg)
 
 ## CONCLUSION
-In this way, YOLOV3 trained on COCO dataset can be used to detect pedestrians which can be further implemented to get Euclidean Distance by converting real world image into Bird’s Eye View. This distance is then used to find social distance violation which is then projected in the form of color coded bounding boxes. 
-However, like every other computerized system YOLOv3 also has it’s limitations that includes counting of a person’s shadow as another pedestrian, recognizing far distant object as pedestrian and in some cases not being able to process pedestrian because of background object. 
+In this way, YOLOV3 trained on COCO dataset can be used to detect pedestrians which can be further implemented to get Euclidean Distance by converting real world image into Bird’s Eye View. This distance is then used to find social distance violation which is then projected in the form of color coded bounding boxes. <br>
+However, like every other computerized system YOLOv3 also has it’s limitations that includes counting of a person’s shadow as another pedestrian, recognizing far distant object as pedestrian and in some cases not being able to process pedestrian because of background object. <br>
 Hence, the horizon of these errors can be narrowed down with more neural network training and feeding more accurate data into COCO dataset and YOLOv3 configuration.
