@@ -5,11 +5,11 @@ https://pjreddie.com/media/files/yolov3.weights
 and copied into folder named "models"
 
 ## REQUIREMENTS
-numpy => v.1.19.2
-scipy => v.1.4.1
-imutils => v.0.5.3
-opencv => v.4.2.0.32
-argparse => v.1.4.0
+numpy => v.1.19.2 <br>
+scipy => v.1.4.1 <br>
+imutils => v.0.5.3 <br>
+opencv => v.4.2.0.32 <br>
+argparse => v.1.4.0 <br>
 
 ## INTRODUCTION
 The framework uses object recognition paradigm to identify humans in multiple Image Sequences. The detection model identifies peoples using detected bounding box information. Using the Euclidean distance, the detected bounding box centroid’s pairwise distances of people are determined.
@@ -24,28 +24,28 @@ This tool has the following features:
 2. Input frames are monocular (taken from a single camera).
 3. Drawn 7 points: 4 - Region of Interest (ROI), 3 - Horizontal and Vertical direction
 
-<u> For Person Detection: </u>
-Yolov3.weights, Yolov3.cfg
+<u> For Person Detection: </u> <br>
+Yolov3.weights, Yolov3.cfg <br>
 The neural network model architecture is stored in the yolov3.cfg file and the pre-trained weights of the neural network are stored in yolov3.weights.
 
 ### Output:
-<b> High Risk: </b> Red Bounding Box
-<b> Low Risk: </b> Yellow Bounding Box
-<b> No Risk: </b> Green Bounding Box
+<b> High Risk: </b> Red Bounding Box <br>
+<b> Low Risk: </b> Yellow Bounding Box <br> 
+<b> No Risk: </b> Green Bounding Box <br>
 
 ## ALGORITHM
 Step 1: Input real time video or pre-recorded video.
-Step 2: Divide the video into number of frames.
+Step 2: Divide the video into number of frames. <br>
 Bird's Eye view (Input):
 Step 3: Use the first frame to get Region of Interest (ROI)
 Step 4: Get the Bird's eye view of ROI using Perspective Transform.
-Step 5: Calculate horizontal and vertical unit length from points marked in first frame.
+Step 5: Calculate horizontal and vertical unit length from points marked in first frame. <br>
 Bird's Eye View (Processing):
 Step 6: Detect people in frame and get center point.
 Step 7: Project detected points in Bird's eye view.
-Step 8: Find distance between points using horizontal and vertical unit length.
+Step 8: Find distance between points using horizontal and vertical unit length. <br>
 Bird's Eye View (Output):
-Step 9: Display Bird's eye view (High Risk: Red, Low Risk: Yellow, No Risk: Green)
+Step 9: Display Bird's eye view (High Risk: Red, Low Risk: Yellow, No Risk: Green) <br>
 Final Output:
 Step 10: Display line between people who are near and risk possessed to them by drawing different color bounding boxes.
 
