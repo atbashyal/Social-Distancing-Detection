@@ -34,20 +34,20 @@ The neural network model architecture is stored in the yolov3.cfg file and the p
 <b> No Risk: </b> Green Bounding Box <br>
 
 ## ALGORITHM
-Step 1: Input real time video or pre-recorded video.
-Step 2: Divide the video into number of frames. <br>
-Bird's Eye view (Input):
-Step 3: Use the first frame to get Region of Interest (ROI)
-Step 4: Get the Bird's eye view of ROI using Perspective Transform.
-Step 5: Calculate horizontal and vertical unit length from points marked in first frame. <br>
-Bird's Eye View (Processing):
-Step 6: Detect people in frame and get center point.
-Step 7: Project detected points in Bird's eye view.
-Step 8: Find distance between points using horizontal and vertical unit length. <br>
-Bird's Eye View (Output):
-Step 9: Display Bird's eye view (High Risk: Red, Low Risk: Yellow, No Risk: Green) <br>
-Final Output:
-Step 10: Display line between people who are near and risk possessed to them by drawing different color bounding boxes.
+Step 1: Input real time video or pre-recorded video.<br>
+Step 2: Divide the video into number of frames. <br> <br>
+Bird's Eye view (Input): <br>
+Step 3: Use the first frame to get Region of Interest (ROI) <br>
+Step 4: Get the Bird's eye view of ROI using Perspective Transform. <br>
+Step 5: Calculate horizontal and vertical unit length from points marked in first frame. <br> <br>
+Bird's Eye View (Processing): <br>
+Step 6: Detect people in frame and get center point. <br>
+Step 7: Project detected points in Bird's eye view. <br>
+Step 8: Find distance between points using horizontal and vertical unit length. <br> <br>
+Bird's Eye View (Output): <br>
+Step 9: Display Bird's eye view (High Risk: Red, Low Risk: Yellow, No Risk: Green) <br> <br>
+Final Output: <br>
+Step 10: Display line between people who are near and risk possessed to them by drawing different color bounding boxes. <br>
 
 ## CODE FLOW
 ![Screenshot from 2023-03-02 17-46-16](https://user-images.githubusercontent.com/68748665/222426330-fdc61c84-84de-4f81-8125-467d4eb6633b.png)
